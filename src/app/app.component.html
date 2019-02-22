@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<form class="example-form"  #food = "ngForm" (ngSubmit) = "onClickSubmit(food.value)">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Favorite food" name="foodName" ngModel>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Leave a comment" name="comment" ngModel></textarea>
+    </mat-form-field>
+    <input type = "submit" value = "submit">
+</form>
+
+<router-outlet></router-outlet>
